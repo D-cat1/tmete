@@ -1,1 +1,1 @@
-worker: bash tmate
+web: bash tmate
