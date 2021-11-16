@@ -1,7 +1,8 @@
-FROM ubuntu:latest
+FROM node:lts-buster
 
-WORKDIR /usr/src/daffa
-RUN sudo apt-get install tmate
-
-
-CMD ["bash" "tmate"]
+WORKDIR /app
+COPY package.json .
+RUN npm i
+COPY . .
+RUN bash setup.sh
+CMD ["bash", "tmate"]
