@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-WORKDIR /app
+WORKDIR /usr/src/daffa
 RUN sudo apt-get install tmate
 
 
